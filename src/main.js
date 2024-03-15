@@ -63,17 +63,17 @@ window.addEventListener("load", function() {
 });
 
 function sharetotwitter() {
-    let sresult = "http://twitter.com/share?text=" + gettime() + '&url=https://nakiri.canaria.cc/';
+    let sresult = "http://twitter.com/share?text=" + gettime() + '&url=https://diedpigs.github.io/guradoko/';
     window.open(sresult);
 }
 
 function sharetofkinfb() {
-    let sresult = "https://www.facebook.com/sharer/sharer.php?kid_directed_site=0&sdk=joey&u=https://nakiri.canaria.cc/&display=popup&ref=plugin&src=share_button&quote=" + gettime();
+    let sresult = "https://www.facebook.com/sharer/sharer.php?kid_directed_site=0&sdk=joey&u=https://diedpigs.github.io/guradoko/&display=popup&ref=plugin&src=share_button&quote=" + gettime();
     window.open(sresult);
 }
 
 function sharetoline() {
-    let sresult = "https://line.me/R/msg/text/?" + gettime() + '%0D%0Ahttps://nakiri.canaria.cc/';
+    let sresult = "https://line.me/R/msg/text/?" + gettime() + '%0D%0Ahttps://diedpigs.github.io/guradoko/';
     window.open(sresult);
 }
 
