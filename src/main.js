@@ -1,5 +1,5 @@
 window.addEventListener("load", function() {
-    var url = 'https://script.google.com/macros/s/AKfycbydoxbJd6RJhJIe6tg8Q6IVKNHObuB8iSLyYbyoCBEQmhfP3tAxlyMtm-ozF8ptTJCd/exec';
+    var url = 'https://script.google.com/macros/s/AKfycbziVAwh4y4dSiuYZ6zf2_pa60RR4B6jxeYyxYOINzkPf71hhahPGRR138yTjgLV8p72/exec';
     fetch(url).then(function(response) {
         if (response.ok) {
             return response.json();
@@ -10,7 +10,7 @@ window.addEventListener("load", function() {
         }
     }).then(function(data) {
         if (data.live == "upcoming") {
-            document.querySelector('#subtitlebox').innerHTML = "百鬼就快開台了，還不快去待機：";
+            document.querySelector('#subtitlebox').innerHTML = "鯊鯊就快開台了，還不快去待機：";
             document.querySelector('#loadingboxl').style.display = 'none';
             document.querySelector('#videoboxl').style.display = 'block';
             var ytplayere = document.createElement("iframe");
@@ -20,7 +20,7 @@ window.addEventListener("load", function() {
             document.querySelector('#ytplayer').appendChild(ytplayere);;
         }
         else if (data.live == "live") {
-            document.querySelector('#subtitlebox').innerHTML = "百鬼正在開台，還不快去看：";
+            document.querySelector('#subtitlebox').innerHTML = "鯊鯊正在開台，還不快去看：";
             document.querySelector('#loadingboxl').style.display = 'none';
             document.querySelector('#videoboxl').style.display = 'block';
             var ytplayere = document.createElement("iframe");
@@ -30,7 +30,7 @@ window.addEventListener("load", function() {
             document.querySelector('#ytplayer').appendChild(ytplayere);;
         }
         else {
-            document.querySelector('#subtitlebox').innerHTML = "距離百鬼上次開台，已經過了：";
+            document.querySelector('#subtitlebox').innerHTML = "距離鯊鯊上次開台，已經過了：";
             document.querySelector('#loadingboxl').style.display = 'none';
             document.querySelector('#countbox').style.display = 'block';
             const startDate = dayjs(data.pubt);
@@ -82,7 +82,7 @@ function gettime() {
     let shour = document.getElementById('hour').innerText;
     let smin = document.getElementById('min').innerText;
     let ssec = document.getElementById('sec').innerText;
-    let stime = "百鬼已經" + sday + "天" + shour + "小時" + smin + "分鐘" + ssec + "秒沒開台了";
+    let stime = "鯊鯊已經" + sday + "天" + shour + "小時" + smin + "分鐘" + ssec + "秒沒開台了";
     return stime;
 }
 
